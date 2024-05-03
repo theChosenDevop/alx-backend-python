@@ -7,7 +7,7 @@ from typing import List, Tuple
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """
-        Creater copies of items
+        Create copies of items
     """
     zoomed_in: List = [
         item for item in lst
@@ -16,8 +16,8 @@ def zoom_array(lst: Tuple, factor: int = 2) -> List:
     return zoomed_in
 
 
-array = [12, 72, 91]
+array = (12, 72, 91)
 
 zoom_2x = zoom_array(array)
 
-zoom_3x = zoom_array(array, 3.0)
+zoom_3x = zoom_array(array, 3)
