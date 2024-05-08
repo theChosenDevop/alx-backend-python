@@ -14,4 +14,8 @@ async def async_comprehension() -> List[float]:
     Returns:
         List[float]: List of random float numbers
     """
-    return [randomNumber async for randomNumber in aiter(async_generator())]
+    try:
+        return [randomNumber async for randomNumber in async_generator()]
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return []
