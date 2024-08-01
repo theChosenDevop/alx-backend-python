@@ -6,7 +6,7 @@ from tying import List
 task_wait_random = __import__('3-task').task_wait_random
 
 
-def task_wait_random(max_delay: int)-> asyncio.Task:
+def task_wait_random(max_delay: int) -> asyncio.Task:
     """Executes task_wait_random n times
     """
     wait_times = await asyncio.gather(
